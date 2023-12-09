@@ -8,6 +8,8 @@
 // }
 
 
+import 'dart:ffi';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'counter_state.dart';
@@ -17,4 +19,10 @@ class CounterCubit extends Cubit<CounterState>{
 
   int teamAPoints = 0;
   int teamBPoints = 0;
+
+  Void TeamAInCrement(int buttonNamber){
+    teamAPoints+= buttonNamber;
+    teamAPoints+= buttonNamber;
+    teamAPoints+= buttonNamber;
+  }
 }
